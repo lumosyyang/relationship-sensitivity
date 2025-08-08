@@ -18,10 +18,10 @@ def radar_plot(df, title="Radar", use_weight=False):
     ex_vals = ex.tolist() + [ex[0]]
     cur_vals = cur.tolist() + [cur[0]]
 
-    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
-    ax.plot(angles, ex_vals, linewidth=2, label="Ex")
+    fig, ax = plt.subplots(figsize=(12, 8), subplot_kw=dict(polar=True))
+    ax.plot(angles, ex_vals, linewidth=2, label="Person A")
     ax.fill(angles, ex_vals, alpha=0.15)
-    ax.plot(angles, cur_vals, linewidth=2, linestyle="--", label="Current")
+    ax.plot(angles, cur_vals, linewidth=2, linestyle="--", label="Person B")
     ax.fill(angles, cur_vals, alpha=0.15)
 
     ax.set_theta_offset(np.pi / 2)
@@ -29,6 +29,7 @@ def radar_plot(df, title="Radar", use_weight=False):
     ax.set_thetagrids(np.degrees(angles[:-1]), labels)
     ax.set_ylim(0, ymax)
     ax.set_title(title, pad=20)
+
     ax.legend(loc="upper right", bbox_to_anchor=(1.15, 1.15))
     plt.tight_layout()
     return fig

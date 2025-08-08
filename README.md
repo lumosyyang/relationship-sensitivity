@@ -89,7 +89,7 @@ python3 -m src.rel_sense.run_sensitivity examples/relationship.csv \
 ```
 ### 4.4) Plot 1D and 3D sensitivity boundary
 ```
-python3 -m src.rel_sense.plots --boundary outputs/boundary_emotionalconnection.csv
+python3 -m src.rel_sense.plots --one outputs/boundary_emotionalconnection.csv
 python3 -m src.rel_sense.plots --tri outputs/tri_sensitivity.csv --eps 0.02
 ```
 

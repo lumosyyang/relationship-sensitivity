@@ -19,13 +19,13 @@ def plot_1d_boundary(csv_path: str, out_path: str):
     # Find closest-to-zero diff
     idx_star = (df["diff"].abs()).idxmin()
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(12, 8))
     ax.plot(df["weight"], df["diff"], marker="o", linewidth=1.5, label="Current - Ex")
     ax.axhline(0.0, linestyle="--", linewidth=1, label="Zero line")
     ax.scatter([df.at[idx_star, "weight"]], [df.at[idx_star, "diff"]],
                s=60, marker="D", label=f"Closest to 0 (w={df.at[idx_star, 'weight']:.3f})")
     ax.set_xlabel("Weight")
-    ax.set_ylabel("Score difference (Current - Ex)")
+    ax.set_ylabel("Score difference (Person B - Person A)")
     ax.set_title("1D Sensitivity: diff vs weight")
     ax.legend()
     ax.grid(True, alpha=0.3)
