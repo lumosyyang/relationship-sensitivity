@@ -5,7 +5,7 @@ Ever wondered *why* you feel more connected to one partner than another — and 
 **Relationship Sensitivity** is a small but mighty toolkit for quantifying and exploring the dynamics between you and the important people in your life.
 
 At its core, it takes a set of **relationship dimensions** (e.g., *Emotional connection*, *Shared values & life goals*, *Aesthetics & taste*, etc.) and assigns each a **weight** representing how important that dimension is to you.  
-It then scores two people (or more, if you extend it) across those dimensions — for example, a current partner vs. an ex — and lets you:
+It then scores two people across those dimensions — for example, a current partner vs. an ex — and lets you:
 
 - 📊 **Score & compare**: See where each person shines (or struggles) across dimensions.
 - 📈 **Visualize**: Generate radar charts and sensitivity plots to understand the strengths and gaps.
